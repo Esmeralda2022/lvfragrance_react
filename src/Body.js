@@ -33,7 +33,7 @@ export function Body({ setTotalItems }) {
 
     // Update the state with filtered and sorted products
     setFilteredProducts(sorted);
-  }, [filter, sortBy]);
+  }, [filter, sortBy, prdList]);
 
   //kjo Metod findIndex kthen indexin e elementit te pare qe ploteson kushtin e dhene, nese nk gjen asnje element , kthen -1
   function addToCart(product) {
