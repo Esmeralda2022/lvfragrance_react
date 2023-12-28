@@ -33,7 +33,7 @@ export function Body({ setTotalItems }) {
 
     // Update the state with filtered and sorted products
     setFilteredProducts(sorted);
-  }, [prdList]);
+  }, [filter, sortBy]);
 
   //kjo Metod findIndex kthen indexin e elementit te pare qe ploteson kushtin e dhene, nese nk gjen asnje element , kthen -1
   function addToCart(product) {
@@ -101,7 +101,7 @@ export function Body({ setTotalItems }) {
         </div>
       </div>
       <div className="imgPresenting">
-        <img src={img1} />
+        <img src={img1} alt="the main foto" />
       </div>
 
       <div className="container " id="container2">
